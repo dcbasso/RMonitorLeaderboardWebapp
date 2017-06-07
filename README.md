@@ -12,9 +12,9 @@ PROJECT TODO'S
 4. Using AngularJS e Angular Material.
 5. Simple Page to show RMonitor Information on the web.
 
-------------------------
-RELEASES 
 
+RELEASES 
+------------------------
 0.1:
 - Create a pom.xml file(Maven) with all future depencecies of the project. 
 - Create persistence manager classes and persistence.xml.
