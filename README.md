@@ -13,9 +13,9 @@ PROJECT TODO'S
 5. Simple Page to show RMonitor Information on the web.
 
 
-RELEASES 
+RELEASES
 ------------------------
 0.1:
-- Create a pom.xml file(Maven) with all future depencecies of the project. 
+- Create a pom.xml file(Maven) with all future dependencies of the project. 
 - Create persistence manager classes and persistence.xml.
-- Create first Rest to check Service Status. 
+- Create first Rest to check Service Status.
