@@ -16,6 +16,12 @@ PROJECT TODO'S
 RELEASES
 ------------------------
 0.1:
-- Create a pom.xml file(Maven) with all future dependencies of the project. 
+- Create a pom.xml file(Maven) with all future dependencies of the project.
 - Create persistence manager classes and persistence.xml.
 - Create first Rest to check Service Status.
+
+0.2:
+- Creates BEANS
+- Added REST service to Receiving Data from Client
+- Added REST service to Send Data to Clients/WebPage
+- 

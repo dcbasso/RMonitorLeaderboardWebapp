@@ -3,6 +3,8 @@ package br.com.dantebasso.rmonitor.services;
 import de.odysseus.staxon.json.jaxrs.jaxb.JsonXMLArrayProvider;
 import de.odysseus.staxon.json.jaxrs.jaxb.JsonXMLObjectProvider;
 import java.util.Set;
+import org.glassfish.jersey.media.multipart.MultiPartFeature;
+import org.glassfish.jersey.moxy.json.MoxyJsonFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 /**
@@ -15,12 +17,15 @@ public class ApplicationConfig extends ResourceConfig {
 
     public ApplicationConfig() {
         // Resources.
-        packages("br.com.dantebasso.rmonitor.services");
+        packages("br.com.dantebasso.rmonitor");
         packages("org.eclipse.persistence.jpa.rs");
 
         // Providers - JSON.
         register(JsonXMLObjectProvider.class);
         register(JsonXMLArrayProvider.class);
+
+        register(MoxyJsonFeature.class);
+        register(MultiPartFeature.class);
 
     }
 
@@ -32,6 +37,7 @@ public class ApplicationConfig extends ResourceConfig {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(br.com.dantebasso.rmonitor.services.generic.ServerRest.class);
+        resources.add(br.com.dantebasso.rmonitor.services.runner.RunnerService.class);
     }
 
 }
